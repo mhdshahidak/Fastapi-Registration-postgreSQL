@@ -20,11 +20,6 @@ To install the project, follow these steps:
   2.Start the PostgreSQL server:
   3.Create the database:
     CREATE DATABASE your_postgres_database_name;
-  MongoDB
-    1.Open a terminal and navigate to the root directory of the project.
-    2.Start the MongoDB server:
-    3.Switch to the database you want to use:
-      use your_mongodb_database_name
 5.Start the FastAPI server:
   uvicorn main:app --reload
 
