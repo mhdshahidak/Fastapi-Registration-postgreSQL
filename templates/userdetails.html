@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <style>
+        /* Define the style for the user details container */
+        .user-details {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /* Define the style for the user details text */
+        .user-details-text {
+            margin-left: 20px;
+        }
+
+        /* Define the style for the profile picture */
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Define the user details container -->
+    <div class="user-details">
+      <!-- Display the profile picture -->
+      <img class="profile-picture" src="data:image/jpeg;base64,{{ profile_picture }}" alt="Profile Picture">
+
+
+
+      <!-- Display the user details text -->
+      <div class="user-details-text">
+        <p><strong>Name:</strong> {{ full_name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Phone:</strong> {{ phone }}</p>
+      </div>
+    </div>
+  </body>
+</html>
